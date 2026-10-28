@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ const name= "monica"
+ const age= 22
+ const city= "chennai"
+ const role="frontend"
+ console.log(`hello,my name is ${name} ,i am ${age} years old,I live in ${city},i am a ${role} developer`)
+
+
+ //Task 2 SIMPLE CALCULATOR
+
+
+ const values=(a,b)=>{
+    console.log("addition:",a+b);
+    console.log("subtraction:",a-b);
+    console.log("multiply:",a*b);
+    console.log("divide:",a/b);
+    
+
+ }
+ values(20, 10)
+
+
+// Task-3   USER GREETING
+ 
+const greetUser=(name,role="frontend Developer")=>{
+
+    console.log(`Hello,i am ${name},my role is ${role}`)
+    
+
+
+}
+greetUser("suva")
+
+// Task-4  STUDENT PROFILE
+
+const student = {
+    name: "Bala",
+    age: 25,
+    course: "JavaScript",
+    city: "Chennai"
+};
+
+ const info=(student)=>{
+const {name,age,course,city}=student
+console.log(`Name:${name},Age:${age},Course:${course},City:${city}`)
+ }
+ info(student)
+
+
+ // Task-5 PRODUCT PRICE CALCULATOR
+ const product = {
+    name: "Laptop",
+    price: 60000,
+    quantity: 2
+};
+
+const productinfo=(product)=>{
+ const {name,price,quantity }=product
+ const prices=price*quantity
+console.log(`Price:${product.price},Quantity:${product.quantity},Total:${prices}`);
+
+
+}
+productinfo(product)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+console.log("1.greater than 35 using some()");
+//TASK-1
+
+const arr=[10, 20, 30, 40];
+ const great=arr.some((arr)=>arr>35);
+ console.log("great",great);
+
+ console.log("2.Students scored above 50 using every().");
+//TASK-2
+
+const students=[{Name:"Moni" ,Score:78},
+{Name:"Dhanam",Score:89},
+{Name : "suva",Score:40}];
+const marks=students.every((students)=>students.marks>50);
+console.log(marks);
+
+//Task-3
+
+console.log("3.admin exists in a roles array using includes().");
+
+const roles=["user","admin","salary"]
+const array=roles.includes("admin")
+console.log(array);
+
+// Task-4
+console.log("4.Calculate the total salary of five employees using reduce()");
+
+const detail=[
+    { name: "Ravi", salary: 25000 },
+    { name: "Priya", salary: 30000 },
+    { name: "Kumar", salary: 35000 },
+    { name: "Divya", salary: 40000 },
+    { name: "Arun", salary: 45000 }];
+const total=detail.reduce((accumlator,current)=>{
+return accumlator+current.salary
+},0)
+console.log(total);
+
+//Task-5
+console.log("5.Calculate a shopping cart's total using price * quantity.");
+
+const cart = [
+    { name: "Laptop", quantity: 1, price: 50000 },
+    { name: "Mouse", quantity: 2, price: 500 },
+    { name: "Keyboard", quantity: 1, price: 1500 },
+    { name: "Headphones", quantity: 2, price: 2000 },
+    { name: "Monitor", quantity: 1, price: 12000 }
+];
+const totals=cart.reduce((val,get)=>{
+    return val+get.price*get.quantity},0)
+    console.log(totals);
+    
+//Task-6
+console.log("6.Find employees earning more than ₹30,000 using filter().");
+const employees=[{Name:"Deepi",Role:"Machinelearning Engineer",Salary:60000},
+{Name:"priya",Role:"DA",Salary:50000},
+{Name:"Moni",Role:"fs",Salary:80000}
+
+];
+const earning=employees.filter((employees)=>employees.Salary)
+    
+    console.log(earning);
+
+//Task-7
+console.log("7.Find a student by ID using find");
+ const std=[{ID:20,name:"deepika"},{ID:21,name:"priya"}]
+ const findStudent=std.find((std)=>std.ID===20)
+ console.log(findStudent)
+
+//Task-8
+console.log("8.Get the index of a product by ID using findIndex()");
+const prod=[{ID:5,name_of_prod:"tote bag"},{ID:6,name_of_prod:"kurti"},
+{ID:7,name_of_prod:"jean"}]
+const findIndex=prod.findIndex((prod)=>prod.ID===6)
+console.log(findIndex)
+
+// Task-9
+console.log("9.Sort products by price from low to high")
+const price=[11,20,25,15,17]
+const ascending=[...price].sort((a,b)=>a-b);
+console.log(ascending);
+
+// Task-10
+console.log("10.Extract only employee names using map()");
+const empname=[{name:"moni",role:"fs"},
+   { name:"Dhanam",role:"frontend"},
+   { name:"Fami",role:"python devolper"}
+]
+const names=empname.map((empname)=>empname.name)
+console.log(names);
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
