@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// const mark=75
+// const promises=new Promise((resolve,reject)=>{
+//     if(mark>35){
+//         resolve("Student Passed")
+//     }else{
+//         reject("Student Failed")
+//     }
+// })
+
+// promises.then((resolve)=>{
+// console.log(resolve);
+
+// })
+// .catch((e)=>{
+
+// console.log(e);
+
+// })
+
+/// Task-2   Login Validation..
+
+const login = new Promise((resolve,reject)=>{
+ setTimeout(()=>{
+if(username==="admin" && password==="123456"){
+resolve("Login Successfully")
+}
+ else{
+    reject("invalid login")
+ }
+},2000);
+});
+ let username ="admin"
+ let password ="123456"
+ login.then(console.log).catch(console.log);
+
+ ///Task-3   
+ let price = 5000;
+
+let discountPromise = new Promise((resolve, reject) => {
+    if (price <= 0) {
+        reject("Price must be greater than zero");
+    } else {
+        let discount = price * 10 / 100;
+        let discountedPrice = price - discount;
+
+        resolve(discountedPrice);
+    }
+});
+
+discountPromise
+    .then((result) => {
+        console.log("Discounted Price: " + result);
+    })
+    .catch((error) => {
+        console.log("Error: " + error);
+    })
+    .finally(() => {
+        console.log("Price calculation completed");
+    });
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

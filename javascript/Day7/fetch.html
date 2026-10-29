@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="showdata">
+
+</div>
+<script>
+const user =document.getElementById("showdata")
+fetch("https://jsonplaceholder.typicode.com/users").then((res)=>{
+    return res.json()
+}).then((data)=>{
+    let user =data
+    console.log(user);
+let myDatas =" "
+user.forEach(element => {
+
+    myDatas +=`<h2>
+        Username:${element.name},
+        Email:${element.email}
+        </h2>`
+});
+showing.innerHTML = myDatas
+}).catch((e)=>{
+    console.log(e);
+}).finally(()=>{
+    console.log("clear");
+    
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
