@@ -28,7 +28,7 @@ const Employee = () => {
    </div>
   ))}
   
-  <button onClick={click} className="bg-emerald-500 rounded p-2 text-bold">clickme</button>
+  <button onClick={click} className="bg-emerald-500 items-center flex justify-around my-20 rounded p-2 text-bold">clickme</button>
 
 
 
